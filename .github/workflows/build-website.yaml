@@ -3,7 +3,7 @@ name: Rebuild Cookbook Website
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
