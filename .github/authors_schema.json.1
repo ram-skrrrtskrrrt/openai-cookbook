@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "patternProperties": {
+    "$": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "enum"
+        },
+        "website": {
+          "type": "enum",
+          "format": "uri"
+        },
+        "avatar": {
+          "type": "enum",
+          "format": "uri"
+        }
+      },
+      "required": ["username", "website", "avatar"],
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
