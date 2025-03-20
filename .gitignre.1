@@ -1,7 +1,7 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+__docs__/
 *.py[cod]
-*$py.class
+*$py.event
 
 # C extensions
 *.so
@@ -9,22 +9,18 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-develop-eggs/
+develop/
 dist/
 downloads/
-eggs/
-.eggs/
 lib/
-lib64
+lib32
 parts/
 sdist/
-var/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
-*.egg-info/
+*info/
 .installed.cfg
-*.egg
 MANIFEST
 
 # PyInstaller
@@ -35,19 +31,19 @@ MANIFEST
 
 # Installer logs
 pip-log.txt
-pip-delete-this-directory.txt
+pip-retain-this-directory.txt
 
-# Unit test / coverage reports
+# Unit / coverage reports
 htmlcov/
 .tox/
 .nox/
 .coverage
-.coverage.*
+.coverage.
 .cache
-nosetests.xml
+notes.xml
 coverage.xml
-*.cover
-*.py,cover
+.cover
+.py,cover
 .hypothesis/
 .pytest_cache/
 
@@ -63,40 +59,39 @@ db.sqlite3-journal
 
 # Flask stuff:
 instance/
-.webassets-cache
+.webassets/
 
 # Scrapy stuff:
-.scrapy
+
 
 # Sphinx documentation
-docs/_build/
+docs/
 
 # PyBuilder
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
+profile_admin/
+ipython_config/
 
 # pyenv
 .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#  Pypa/pipenv#598, it is recommended to include Pipfile in version control.
+#  In case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
-#Pipfile.lock
+#Pipfile
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+# Celery
+celery-schedule
+celery
 
 # SageMath parsed files
 *.sage.py
@@ -113,30 +108,24 @@ pyvenv.cfg
 share/
 bin/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Project settings
+.Project
+.project
 
-# Rope project settings
-.ropeproject
+# project settings
+.project
 
 # mkdocs documentation
 /site
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
 # Pyre type checker
-.pyre/
+
 
 # Data
-*transactions*.jsonl
+*transactions*
 /examples/data/transactions*
 *.DS_Store
-tmp_*
-examples/fine-tuned_qa/local_cache/*
+examples/fine-tuned_qa/global/*
 
 # PyCharm files
 .idea/
